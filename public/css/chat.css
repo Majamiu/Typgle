@@ -63,7 +63,7 @@ body > .textbox > .button > button:hover {
     background: #a70000;
 }
 body > .textbox > .button > button > img {
-    width: 19px;
+    width: 17px;
     margin-left: 5px;
 }
 header {
@@ -184,7 +184,7 @@ header > .content {
 }
 .DisabledBtn button > img {
     margin-right: 5px;
-    width: 19px;
+    width: 17px;
 }
 .GreenColor button {
     background-color: #6a8f6a !important;
