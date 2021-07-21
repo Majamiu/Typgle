@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+  <title>Chatty: Talk to strangers!</title>
+  <meta charset="UTF-8" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Chatty: Chat with Strangers!" />
+  <meta property="og:description" content="Chatty is a platform to meet strangers and make new friends." />
+  <meta property="og:image:secure_url" content="/images/meta_image.png" />
+  <meta property="og:image:type" content="/images/png" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="300" />
+  <meta name="keywords" content="Chatty, Omegle clone, Omegle, chat to strangers anonymously, chat" />
+  <meta name="description" content="Chatty: Chat with Strangers!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body id="app">
+  <!-- Agreeing to privacy policy and conditions. -->
+
+  <div v-if="CheckBox == true" id="cover">
+    <div class="design">
+      <div class="title">Chatty's Conditions & Terms</div>
+      <hr />
+      <div class="body">
+        <div class="checkbox">
+          <label class="container">
+            <input v-on:click="Checked" type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <div class="text">
+            I agree to all the <a href="/TermsAndConditions">Terms</a> and
+            <a href="/TermsAndConditions">Conditions</a>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <button v-bind:class="{ DisabledButton: disable, NormalButton: disable == false }"
+          v-on:click="CheckIfCheckBoxChecked">
+          Continue
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <div class="logo">Chatty</div>
+  </header>
+  <main>
+    <section class="view">
+      <!-- Left side which will be until 700 px mobile resolution. -->
+      <div class="left">
+        <div class="HeaderText">Chatty — great place to chat with strangers anonymously</div>
+        <div class="text">
+          When you will press ,,Start chat'' button, you will be paired randomly with another person to
+          talk one-on-one.
+        </div>
+        <div class="onlinenow">
+          <div class="blue">{{ OnlineUsers }}</div>
+          People online.
+        </div>
+        <div class="btn">
+          <button v-on:click="CheckBoxOn">Start chat</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="illustration">
+          <img src="/images/illustration.jpg" />
+        </div>
+      </div>
+
+      <!-- Left side which will be until 700 px mobile resolution. -->
+
+      <div class="MobileTextSection">
+        <div class="HeaderText">Chatty — great place to chat with strangers anonymously</div>
+        <div class="text">
+          When you will press ,,Start chat'' button, you will be paired randomly with another person to
+          talk one-on-one.
+        </div>
+        <div class="onlinenow">
+          <div class="blue">{{ OnlineUsers }}</div>
+          People online.
+        </div>
+        <div class="btn">
+          <button v-on:click="CheckBoxOn">Start chat</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/vue.global.prod.js"></script>
+
+  <script defer src="/js/index.js"></script>
+
+  <script src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>
