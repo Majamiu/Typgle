@@ -1,17 +1,12 @@
 "use strict";
 
 var AvailableRooms = [];
-
 var inconversation = [];
-
 var id;
-
 var indexOfEmptyRoom;
 
 var UserWasInconversation = false;
-
 var socketID;
-
 var UserCounter = 0;
 
 module.exports = (io) => {
