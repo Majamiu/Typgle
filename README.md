@@ -6,10 +6,10 @@ This clone might be not as good as it could be because I created it for learning
 
 ## Screenshots
 
-![index page](./screenshots/1.png)
+![Index](./Screenshots/1.png)
 
-![Searching for a stranger](./screenshots/2.png)
+![Searching for a stranger](./Screenshots/2.png)
 
-![In conversation with stranger](./screenshots/3.png)
+![In conversation with stranger](./Screenshots/3.png)
 
-![Stranger left the conversation](./screenshots/4.png)
+![Stranger left the conversation](./Screenshots/4.png)
