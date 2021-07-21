@@ -1,0 +1,343 @@
+@font-face {
+    font-family: FuturaPT;
+    src: url(/fonts/Futura.otf);
+}
+@font-face {
+    font-family: Proxima-Nova-Light;
+    src: url(/fonts/Proxima-Nova-Light.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #eff2f5;
+    font-family: Proxima-Nova-Light, Arial, Tahoma, sans-serif;
+}
+header {
+    height: 60px;
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+header > .logo {
+    font-family: FuturaPT;
+    font-size: 32px;
+    color: black;
+    display: flex;
+}
+main > .view {
+    margin: auto;
+    max-width: 1300px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+main > .view > .left {
+    display: block;
+    float: left;
+    max-width: 700px;
+    margin-top: 110px;
+    margin-right: 100px;
+}
+main > .view > .left > .HeaderText {
+    font-family: Proxima-Nova-Light;
+    font-size: 34px;
+    max-width: 550px;
+    line-height: 43px;
+}
+main > .view > .left > .text {
+    margin-top: 15px;
+    max-width: 520px;
+    font-size: 19px;
+    line-height: 29px;
+}
+main > .view > .left > .onlinenow {
+    margin-top: 10px;
+    font-size: 19px;
+    display: flex;
+}
+main > .view > .left > .onlinenow > .blue {
+    color: #5583c5;
+    margin-right: 5px;
+    font-weight: bold;
+}
+main > .view > .left > .btn {
+    margin-top: 20px;
+    max-width: 520px;
+}
+main > .view > .left > .btn > button {
+    border: none;
+    background: #5583c5;
+    color: white;
+    padding: 12px 15px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 21px;
+    border-radius: 6px;
+    font-family: Proxima-Nova-Light;
+}
+main > .view > .left > .btn > button:hover {
+    background: #4477be;
+}
+main > .view > .right > .illustration > img {
+    width: 500px;
+}
+main > .view > .left > .simpleText {
+    color: #686868;
+    font-family: Proxima-Nova-Light;
+    font-size: 18px;
+    margin-top: 50px;
+}
+#cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #00000067;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+}
+#cover > .design {
+    background: #ffffff;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 15% auto;
+    width: 600px;
+    position: relative;
+    border-radius: 6px;
+}
+#cover > .design > .title {
+    justify-content: center;
+    display: flex;
+    margin-top: 1em;
+    font-size: 20px;
+}
+#cover > .design > hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+#cover > .design > .body {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+    display: block;
+}
+#cover > .design > .body > .checkbox {
+    display: flex;
+    justify-content: center;
+}
+#cover > .design > .body > .checkbox > input {
+    width: 16px;
+}
+#cover > .design > .body > .checkbox > .text {
+    font-size: 20px;
+    margin-left: 10px;
+}
+#cover > .design > .body > .checkbox > .text > a {
+    color: #4477be;
+}
+#cover > .design > .button {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.NormalButton {
+    border: none;
+    background: #5583c5;
+    color: white;
+    padding: 12px 15px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 21px;
+    border-radius: 6px;
+    font-family: Proxima-Nova-Light;
+}
+.DisabledButton {
+    border: none;
+    background: #73a2e4;
+    color: white;
+    padding: 12px 15px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 21px;
+    border-radius: 6px;
+    font-family: Proxima-Nova-Light;
+}
+.DisabledButton:hover {
+    background: #73a2e4 !important;
+}
+#cover > .design > .button > button:hover {
+    background: #4477be;
+}
+.MobileTextSection {
+    display: none;
+}
+.MobileTextSection > .HeaderText {
+    font-family: Proxima-Nova-Light;
+    font-size: 34px;
+    max-width: 550px;
+    line-height: 43px;
+    font-size: 27px;
+}
+.MobileTextSection > .text {
+    margin-top: 15px;
+    max-width: 520px;
+    font-size: 19px;
+    line-height: 29px;
+    font-size: 19px;
+}
+.MobileTextSection > .onlinenow {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+.MobileTextSection > .btn {
+    margin-top: 20px;
+}
+.MobileTextSection > .btn > button {
+    border: none;
+    background: #5583c5;
+    color: white;
+    padding: 12px 15px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 21px;
+    border-radius: 6px;
+    font-family: Proxima-Nova-Light;
+    margin-bottom: 20px;
+}
+
+.MobileTextSection > .onlinenow > .blue {
+    color: #5583c5;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/* Checkbox design */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #5583c5;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 10px;
+    top: 6px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Mobile responsive design */
+
+@media only screen and (max-width: 1000px) {
+    main > .view {
+        max-width: 800px;
+    }
+    main > .view > .right > .illustration > img {
+        width: 407px;
+    }
+    main > .view > .left > .HeaderText {
+        font-size: 24px;
+    }
+    main > .view > .left > .text {
+        font-size: 17px;
+    }
+    main > .view > .left > .onlinenow {
+        font-size: 17px;
+    }
+    main > .view > .left {
+        margin-top: 70px;
+    }
+    main > .view > .left > .btn > button {
+        height: 43px;
+        width: 186px;
+        font-size: 19px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    main > .view {
+        display: grid;
+        max-width: 500px;
+        text-align: center;
+    }
+    .MobileTextSection {
+        display: block;
+    }
+    main > .view > .left {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #cover > .design {
+        width: 465px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    main > .view {
+        display: grid;
+        max-width: 460px;
+        text-align: center;
+    }
+}
